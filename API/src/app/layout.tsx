@@ -15,8 +15,8 @@ import { newMeta } from "@/modules/meta";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Kars API",
-    description: "Private API Server",
+    title: "MonoRepo - API",
+    description: "An open source discordjs bot monorepo.",
 };
 
 export default function RootLayout({
