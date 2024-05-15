@@ -14,7 +14,7 @@ export function GET(request: NextRequest) {
     const searchParams = request.nextUrl.searchParams;
     const query = searchParams.get("key");
     if (query?.toLowerCase() === envKey) {
-        succesStats()
+        succesStats();
         return new Response(
             JSON.stringify({
                 response: getStats(),
@@ -27,8 +27,8 @@ export function GET(request: NextRequest) {
             }
         );
     }
-    if ((query.length = 0)) {
-        failedStats()
+    if (!query || (query && query.length === 0)) {
+        failedStats();
         return new Response(JSON.stringify({ response: "Not Authenticated" }), {
             status: 401,
             headers: {
@@ -36,7 +36,7 @@ export function GET(request: NextRequest) {
             },
         });
     } else {
-        failedStats()
+        failedStats();
         return new Response(
             JSON.stringify({ response: "Incorrect Authentication" }),
             {
