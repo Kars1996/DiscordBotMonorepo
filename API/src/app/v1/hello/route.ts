@@ -1,3 +1,4 @@
+import { succesStats } from "@/modules/Utils/Stats";
 import { type NextRequest } from "next/server";
 
 /*
@@ -21,6 +22,7 @@ export function GET(request: NextRequest) {
     const searchParams = request.nextUrl.searchParams;
     const query = searchParams.get("key");
     if (query?.toLowerCase() === "kars") {
+        succesStats()
         return new Response(
             JSON.stringify({ response: "How cool well done :D", status: 200 }),
             {

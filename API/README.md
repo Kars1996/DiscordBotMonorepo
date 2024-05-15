@@ -16,6 +16,6 @@ This is a [Next.js](https://nextjs.org/) template created for Kars Powered API's
 Create a `.env` file with the following information
 ```env
 MOGNODBURI=
-AUTHENTICATION=
+KEY=
 ```
 

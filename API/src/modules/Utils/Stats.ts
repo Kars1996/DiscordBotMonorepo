@@ -1,7 +1,7 @@
 import { sql } from "@vercel/postgres";
 
-let successfulRequests: number = 2497;
-let failedRequests: number = 9;
+let successfulRequests: number = 0;
+let failedRequests: number = 0;
 
 export async function succesStats() {
     successfulRequests++;
