@@ -30,7 +30,7 @@ export default function () {
     const totalMembers = stats?.members;
     const totalGuilds = stats?.guilds;
     return (
-        <main className="flex flex-col items-center justify-center min-h-[100dvh] bg-gray-900 text-gray-50 py-12 md:py-24">
+        <main className="flex flex-col items-center justify-center min-h-[100dvh] bg-[#1c1c1c] text-gray-50 py-12 md:py-24">
             <div className="container px-4 md:px-6 text-center space-y-6">
                 <div className="space-y-2">
                     <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
