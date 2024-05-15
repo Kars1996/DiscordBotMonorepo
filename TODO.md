@@ -1,0 +1,22 @@
+- [ ] Make the API More Dynamic
+- [x] Initialse Everything
+- [ ] Write Doccumentation
+- [ ] Write a commands page
+- [ ] Write a status page
+- [x] Write a stats API (Make more dynamic)
+- [ ] Add more routes to the API
+- [ ] Make Discord Bot have more commands
+- [ ] Optimisations
+- [ ] Tests
+- [x] Create API
+- [x] Create Community Things
+- [x] Release to public endpoints
+- [ ] Features Page
+- [ ] FAQ Page
+- [ ] TOS
+- [ ] Preloader
+- [ ] AOS
+- [ ] Public Discord Bot
+- [x] Make The bot
+
+- [ ] Make TODO.md more strucuted 
