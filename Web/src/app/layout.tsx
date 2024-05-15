@@ -17,8 +17,8 @@ import AOS from "@/lib/Aos/aos";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Kars Template",
-    description: ":D",
+    title: "MonoRepo - Web",
+    description: "An open source discordjs bot monorepo.",
 };
 
 export default function RootLayout({
