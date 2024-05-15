@@ -83,6 +83,15 @@ This project was created with the following tech stack
 - **[Docus](https://docus.dev)** - For Documentation
 - **[DiscordJS](https://discord.js.org/)** - For the Discord Bot
 
+## Public Versions
+
+- **Bot** - A public version of the bot may be worked on later
+- **API** - The current API Is on `api.karstest.pro`
+- **Website** - The Website is visible on `mono.karstest.pro`
+- **Docs** - The docs will be visible on `monodocs.karstest.pro`
+
+**All web services hosted on Vercel and the bot hosted on ?????**
+
 ---
 
 ### Connect with Kars 🌐
