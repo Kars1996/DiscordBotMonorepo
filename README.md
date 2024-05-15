@@ -8,7 +8,7 @@ To get started with this Discord Bot Monorepo, follow these steps:
 
 1. Clone this repository to your local machine. 📦
    ```bash
-   git clone https://github.com/kars/discordbotmonorepo.git
+   git clone https://github.com/kars1996/discordbotmonorepo.git
    ```
 
 2. Navigate into the project directory. 📂
