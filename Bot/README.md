@@ -34,3 +34,23 @@ npm run build
 ```js
 npm start
 ```
+
+## Quickstarting using create-kapp
+
+```bash
+npm i create-kapp@latest -g
+```
+
+then run the create-kapp command to initialise this template.
+
+```bash
+create-kapp
+```
+
+You'll be promoted with this:
+
+```bash
+? Setup the project in...? »
+# Use "." or "./" for the local folder.
+# Use a foldername to setup the project in that folder. (It will be created if it doesn't exist)
+```
