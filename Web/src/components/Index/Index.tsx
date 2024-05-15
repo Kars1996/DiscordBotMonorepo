@@ -1,3 +1,5 @@
+"use client";
+
 /*
 Copyright © 2024 Kars (github.com/kars1996)
 
@@ -6,8 +8,27 @@ Contact Kars for any enquieries
 */
 
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 export default function () {
+    type StatsProp = {
+        members: number;
+        guilds: number;
+    };
+    const [stats, setStats] = useState<StatsProp>();
+    useEffect(() => {
+        fetch("https://api.karstest.pro/v1/stats")
+            .then((response) => response.json())
+            .then((d) => {
+                setStats(d);
+            })
+            .catch((error) => {
+                console.error("Error fetching data from API:", error);
+            });
+    }, []);
+
+    const totalMembers = stats?.members
+    const totalGuilds = stats?.guilds
     return (
         <main className="flex flex-col items-center justify-center min-h-[100dvh] bg-gray-900 text-gray-50 py-12 md:py-24">
             <div className="container px-4 md:px-6 text-center space-y-6">
@@ -46,13 +67,13 @@ export default function () {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-gray-400">
                     <div className="flex flex-col items-center">
                         <span className="text-2xl font-bold text-gray-50">
-                            10,000+
+                            {totalMembers?.toLocaleString() || "1000"}+
                         </span>
                         <span>Members</span>
                     </div>
                     <div className="flex flex-col items-center">
                         <span className="text-2xl font-bold text-gray-50">
-                            500+
+                            {totalGuilds?.toLocaleString() || "500"}+
                         </span>
                         <span>Guilds</span>
                     </div>
