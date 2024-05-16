@@ -13,7 +13,7 @@ interface ResponseProp {
 
 const Data: ResponseProp = {
     code: "not_found",
-    response: "This API Route does not exisist.",
+    response: "This API Route does not exist.",
     status: 404
 }
 
