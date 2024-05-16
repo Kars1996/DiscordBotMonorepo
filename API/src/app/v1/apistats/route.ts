@@ -8,6 +8,8 @@ Not to be shared, replicated or used without prior consent.
 Contact Kars for any enquieries
 */
 
+
+// TODO: Fix the internal Server Error when using /v1/apistats
 const envKey = process.env.key || "admin";
 
 export function GET(request: NextRequest) {
